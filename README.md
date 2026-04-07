@@ -25,20 +25,19 @@ It is designed to support End-to-End (E2E) and Regression Testing for web applic
 ---
 
 ## ▶️ How to Run
-
+```bash
 1. Clone the repository:
-```bash
 git clone https://github.com/aufaathallah82/SeleniumFrameworkAufa.git
-```bash
-3. Open in IDE (IntelliJ / Eclipse)
-4. Install dependencies:
-```bash
+
+2. Open in IDE (IntelliJ / Eclipse)
+3. Install dependencies:
+
 mvn clean install
-```bash
-5. Run tests:
-```bash
+
+4. Run tests:
+
 mvn test
-```bash
+
 
 ---
 
