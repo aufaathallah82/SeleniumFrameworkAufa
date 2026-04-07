@@ -25,19 +25,20 @@ It is designed to support End-to-End (E2E) and Regression Testing for web applic
 ---
 
 ## ▶️ How to Run
-```bash
-1. Clone the repository:
-git clone https://github.com/aufaathallah82/SeleniumFrameworkAufa.git
 
+1. Clone the repository:
+```bash
+git clone https://github.com/aufaathallah82/SeleniumFrameworkAufa.git
+```
 2. Open in IDE (IntelliJ / Eclipse)
 3. Install dependencies:
-
+```bash
 mvn clean install
-
+```
 4. Run tests:
-
+```bash
 mvn test
-
+```
 
 ---
 
@@ -52,3 +53,5 @@ mvn test
 👨‍💻 Author
 
 Muhammad Aufa Athallah
+
+
