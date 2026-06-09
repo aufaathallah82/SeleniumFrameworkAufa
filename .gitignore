@@ -41,3 +41,6 @@ build/
 docs/AI_CONTEXT.md
 docs/AI_TASKS.md
 docs/AI_DECISIONS.md
+
+### Local browser drivers ###
+src/test/resources/chromedriver.exe
