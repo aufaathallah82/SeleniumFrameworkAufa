@@ -1,0 +1,51 @@
+# AI Decisions
+
+## Purpose
+
+Use this file as the lightweight decision log for AI-assisted work.
+
+Record durable architectural choices:
+
+- accepted patterns
+- rejected alternatives
+- constraints that drive implementation
+- temporary decisions that need later review
+
+## Decision Log
+
+### D-001: Decision Title
+
+Status:
+
+- Accepted
+
+Reason:
+
+- factual reason
+- factual reason
+
+Impact:
+
+- implementation consequence
+- scope consequence
+
+### D-002: Decision Title
+
+Status:
+
+- Proposed
+
+Reason:
+
+- open rationale
+
+Impact:
+
+- what changes if accepted
+
+## Status Guide
+
+- `Accepted`: active decision to follow
+- `Proposed`: likely direction, not final
+- `Rejected`: considered and intentionally not used
+- `Superseded`: replaced by a newer decision

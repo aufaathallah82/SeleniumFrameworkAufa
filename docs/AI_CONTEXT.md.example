@@ -1,0 +1,104 @@
+# AI Context
+
+## Purpose
+
+Use this file as the current-state project memory for AI-assisted work.
+
+Record facts, not plans:
+
+- active framework architecture
+- current tech stack and versions
+- test structure and execution flow
+- config locations
+- driver lifecycle design
+- known risks and constraints
+- files that matter for the next major change
+
+## Project Summary
+
+- Project type:
+- Primary framework path:
+- Main business flow under test:
+
+## Current Tech Stack
+
+- Java:
+- Build tool:
+- Test framework:
+- BDD framework:
+- Browser automation:
+- Reporting:
+
+## Current Test Structure
+
+### Features
+
+- location:
+- naming convention:
+
+### Runners
+
+- location:
+- discovery rule:
+
+### Step Definitions
+
+- location:
+- responsibilities:
+
+### Page Objects
+
+- location:
+- responsibilities:
+
+### Hooks / Lifecycle
+
+- location:
+- responsibilities:
+
+### Driver / Config
+
+- driver factory:
+- config reader:
+- config files:
+
+## Execution Flow
+
+1. Runner starts suite
+2. Hooks create driver
+3. Step definitions use page objects
+4. Page objects interact with application
+5. Hooks close driver
+
+## Current Runtime Configuration
+
+- base URL:
+- browser:
+- headless:
+- implicit wait:
+- explicit wait:
+- driver path strategy:
+
+## Locator Inventory Relevant To Healing
+
+- critical page:
+- critical locators:
+- likely brittle locators:
+
+## Risks / Constraints
+
+- risk:
+- risk:
+- constraint:
+
+## Recommended Next Integration Point
+
+- target area:
+- why:
+- files to touch:
+
+## Files To Revisit
+
+- `pom.xml`
+- `src/test/java/...`
+- `src/test/resources/...`

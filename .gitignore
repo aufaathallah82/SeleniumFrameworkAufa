@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### AI project memory ###
+docs/AI_CONTEXT.md
+docs/AI_TASKS.md
+docs/AI_DECISIONS.md

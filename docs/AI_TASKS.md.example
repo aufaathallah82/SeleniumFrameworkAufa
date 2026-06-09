@@ -1,0 +1,65 @@
+# AI Tasks
+
+## Purpose
+
+Use this file as the active implementation backlog for AI-assisted work.
+
+Record actionable items, not historical notes:
+
+- framework refactors
+- setup cleanup
+- integration steps
+- validation tasks
+- follow-up hardening work
+
+## Goal
+
+State the next major outcome clearly.
+
+Example:
+
+- Prepare the framework for Healenium integration with minimal rework.
+
+## Priority Tasks
+
+### 1. Task Title
+
+Objective:
+
+- what needs to change
+
+Target outcome:
+
+- expected result
+
+Candidate files:
+
+- `path/to/file`
+
+### 2. Task Title
+
+Objective:
+
+- what needs to change
+
+Target outcome:
+
+- expected result
+
+Candidate files:
+
+- `path/to/file`
+
+## Suggested Order
+
+1. First task
+2. Second task
+3. Third task
+
+## Definition Of Ready
+
+The project is ready when:
+
+- measurable condition
+- measurable condition
+- measurable condition
