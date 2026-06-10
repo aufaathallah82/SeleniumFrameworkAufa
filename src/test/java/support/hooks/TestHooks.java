@@ -1,11 +1,11 @@
-package hooks;
+package support.hooks;
 
-import driver.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
+import support.browser.DriverFactory;
 
-public class Hooks {
+public class TestHooks {
 
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
 

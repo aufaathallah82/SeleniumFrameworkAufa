@@ -1,20 +1,20 @@
-package stepdefinitions;
+package steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import hooks.Hooks;
 import org.testng.Assert;
 import pages.LoginPage;
+import support.hooks.TestHooks;
 
-public class LoginStepDef {
+public class LoginSteps {
 
     private LoginPage loginPage;
 
     @Given("the user is on the login page")
     public void theUserIsOnTheLoginPage() {
-        loginPage = new LoginPage(Hooks.getDriver());
+        loginPage = new LoginPage(TestHooks.getDriver());
         loginPage.open();
     }
 

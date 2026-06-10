@@ -2,50 +2,48 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.ConfigReader;
+import support.config.TestConfig;
 
-import java.time.Duration;
+public class LoginPage extends BasePage {
 
-public class LoginPage {
-
-    private final WebDriver driver;
-    private final WebDriverWait wait;
     private final By usernameInput = By.id("user-name");
     private final By passwordInput = By.id("password");
     private final By loginButton = By.id("login-button");
     private final By productsTitle = By.className("title");
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getDurationSeconds("timeouts.explicit.seconds")));
+        super(driver);
     }
 
     public void open() {
-        driver.get(ConfigReader.getRequiredProperty("base.url"));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
+        driver.get(TestConfig.getRequired("base.url"));
+        visible(usernameInput);
     }
 
     public void enterUsername(String username) {
-        WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
+        var usernameField = visible(usernameInput);
         usernameField.clear();
         usernameField.sendKeys(username);
     }
 
     public void enterPassword(String password) {
-        WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInput));
+        var passwordField = visible(passwordInput);
         passwordField.clear();
         passwordField.sendKeys(password);
     }
 
     public void clickLogin() {
-        wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+        clickable(loginButton).click();
+    }
+
+    public void loginAs(String username, String password) {
+        enterUsername(username);
+        enterPassword(password);
+        clickLogin();
     }
 
     public boolean isProductsPageVisible() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(productsTitle))
+        return visible(productsTitle)
                 .getText()
                 .trim()
                 .equalsIgnoreCase("Products");

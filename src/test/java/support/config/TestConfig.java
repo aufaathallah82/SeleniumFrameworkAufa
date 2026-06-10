@@ -1,21 +1,21 @@
-package utils;
+package support.config;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public final class ConfigReader {
+public final class TestConfig {
 
     private static final String CONFIG_FILE = "config/config.properties";
     private static final Properties PROPERTIES = loadProperties();
 
-    private ConfigReader() {
+    private TestConfig() {
     }
 
     private static Properties loadProperties() {
         Properties properties = new Properties();
 
-        try (InputStream inputStream = ConfigReader.class.getClassLoader().getResourceAsStream(CONFIG_FILE)) {
+        try (InputStream inputStream = TestConfig.class.getClassLoader().getResourceAsStream(CONFIG_FILE)) {
             if (inputStream == null) {
                 throw new IllegalStateException("Configuration file not found: " + CONFIG_FILE);
             }
@@ -26,7 +26,7 @@ public final class ConfigReader {
         }
     }
 
-    public static String getRequiredProperty(String key) {
+    public static String getRequired(String key) {
         String value = PROPERTIES.getProperty(key);
         if (value == null || value.isBlank()) {
             throw new IllegalStateException("Missing required property: " + key);
@@ -34,7 +34,7 @@ public final class ConfigReader {
         return value.trim();
     }
 
-    public static long getDurationSeconds(String key) {
-        return Long.parseLong(getRequiredProperty(key));
+    public static long getSeconds(String key) {
+        return Long.parseLong(getRequired(key));
     }
 }
